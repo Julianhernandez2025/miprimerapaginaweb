@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI PAGINA WEB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navlist">
+            <ul>
+                <a href="index.html" class="first-child">JULIAN HERNANDEZ</a>
+            </ul>
+            <ul class="navlinks">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="sobre-mi.html">SOBRE MI</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="contact-container">
+        <h1>CONTACTO</h1>
+        <p>Puedes contactarme a traves del formulario o usando las siguientes opciones:</p>
+        
+        <div class="contact-content">
+            <div class="contact-form-section">
+                <h2>Envíame un Mensaje</h2>
+                <form action="https://formspree.io/f/mldvrnrb" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono (Opcional):</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+57 3XX XXX XXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="subject" placeholder="Tema del mensaje" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar Mensaje" class="submit-button">
+                </form>
+            </div>
+
+            <div class="contact-info-section">
+                <h2>Otras Formas de Contacto</h2>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>Email</h3>
+                        <a href="mailto:julianfranciscohernandez9@gmail.com">julianfranciscohernandez9@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <h3>Teléfono</h3>
+                        <a href="tel:+573160977666">+57 316 097 7666</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Conectado con <a href="https://www.sena.edu.co/" target="_blank">SENA</a></p>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a class="whatsapp-float" data-tooltip="Escríbeme por WhatsApp" href="https://wa.me/573160977666" target="_blank" rel="noopener">💬</a>
+</body>
+</html>
